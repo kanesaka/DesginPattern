@@ -9,11 +9,10 @@ public class VeteranTeacher extends Teacher {
     studentList.add(new Student("中ノ森玲菜", 2));
     studentList.add(new Student("西森俊介", 1));
   }
-
   public void callStudents() {
     Iterator iterator = studentList.iterator();
-    while (iterator.hasNext()) {
-      System.out.println(((Student)iterator.next()).getName());
+    while(iterator.hasNext()) {
+      System.out.println(((Student) iterator.next()).getName());
     }
   }
 }

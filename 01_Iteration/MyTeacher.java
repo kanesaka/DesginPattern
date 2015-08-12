@@ -7,10 +7,8 @@ public class MyTeacher extends Teacher {
     studentList.add(new Student("中ノ森玲菜", 2));
     studentList.add(new Student("西森俊介", 1));
   }
-
   public void callStudents() {
-    for (int i = 0; i < studentList.getLastNum(); i++) {
-      System.out.println(((Student)studentList.getStudentAt(i)).getName());
-    }
+    for(int i = 0; i < studentList.getLastNum(); i++)
+      System.out.println(((Student) studentList.getStudentAt(i)).getName());
   }
 }

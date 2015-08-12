@@ -4,7 +4,6 @@ public class Hanako implements Chairperson {
   public Hanako() {
     taro = new Taro();
   }
-
   public void organizeClass() {
     taro.enjoyWithAllClassmate();
   }

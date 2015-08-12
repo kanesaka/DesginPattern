@@ -5,15 +5,13 @@ public class MyStudentListIterator implements Iterator {
   public MyStudentListIterator(MyStudentList list) {
     myStudentList = list;
   }
-
   public boolean hasNext() {
-    if (index < myStudentList.getLastNum()) {
+    if(index < myStudentList.getLastNum()) {
       return true;
     } else {
       return false;
     }
   }
-
   public Student next() {
     Student student = myStudentList.getStudentAt(index);
     index++;
